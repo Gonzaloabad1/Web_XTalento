@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    height: 6vh;
+    align-items: center;
+    }
+    @media (max-width: 770px) {
+    footer {
+    padding: 0 2rem;
+    gap: 2rem;
+    }
+    }
+    footer > div {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    }
+    

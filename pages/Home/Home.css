@@ -1,0 +1,61 @@
+.home {
+    padding: 0 8rem; /* Establece el espaciado interior izquierdo y derecho a 8rem */
+    display: flex; /* Establece la visualización como un contenedor flexible */
+    flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
+    justify-content: center; /* Centra verticalmente los elementos hijos */
+    align-items: flex-start; /* Alinea los elementos hijos a la izquierda */
+}
+
+/* Estilos para la clase "home" en pantallas con un ancho máximo de 700px */
+@media (max-width: 700px) {
+    .home {
+        padding: 0 2rem; /* Cambia el espaciado interior izquierdo y derecho a 2rem en pantallas más pequeñas */
+    }
+}
+
+/* Estilos para elementos dentro de la clase "home" */
+.home > a {
+    font-size: 1.5rem; /* Establece el tamaño de fuente de los elementos 'a' */
+}
+
+.home > h2 {
+    font-size: 16px; /* Establece el tamaño de fuente a 16px */
+    color: rgba(255, 13, 0, 0.761); /* Establece el color del texto en rojo */
+    color: rgb(22, 144, 8); /* Esto puede sobrescribir el color anterior, dejándolo en crimson (rojo oscuro) */
+    -webkit-background-clip: text; /* Configura un efecto de fondo recortado al texto (puede requerir propiedades adicionales) */
+    background-clip: text; /* Continuación del efecto de fondo recortado al texto */
+    margin-bottom: 10px; /* Establece un margen inferior de 10px */
+}
+
+.home > h3 {
+    font-size: 16px; /* Establece el tamaño de fuente a 16px (similar a h2) */
+    color: red; /* Establece el color del texto en rojo (similar a h2) */
+    color: crimson; /* Esto puede sobrescribir el color anterior, dejándolo en crimson (rojo oscuro, similar a h2) */
+    -webkit-background-clip: text; /* Configura un efecto de fondo recortado al texto (similar a h2) */
+    background-clip: text; /* Continuación del efecto de fondo recortado al texto (similar a h2) */
+}
+
+.home > p {
+    font-size: 14px; /* Establece el tamaño de fuente a 14px */
+    color: black; /* Establece el color del texto en negro */
+    -webkit-background-clip: text; /* Configura un efecto de fondo recortado al texto (puede requerir propiedades adicionales) */
+    background-clip: text; /* Continuación del efecto de fondo recortado al texto */
+    margin-bottom: 10px; /* Establece un margen inferior de 10px */
+}
+
+/* Estilos para la clase "logo" */
+.logo {
+    width: 100%; /* Establece el ancho al 100% */
+    height: 100%; /* Establece la altura al 100% */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+* {
+    margin: 0;
+    Padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background:#000;
+  }
+  
+  

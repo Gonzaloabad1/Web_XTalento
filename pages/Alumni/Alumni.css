@@ -1,0 +1,121 @@
+.alumni {
+    padding: 0 8rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+@media (max-width: 700px) {
+    .alumni {
+        padding: 0 2rem;
+    }
+}
+
+.alumni > a {
+    font-size: 1.5rem;
+}
+
+.alumni > h2,
+.alumni > h3,
+.alumni > p {
+    font-size: 16px;
+    color: crimson; /* Cambiamos el color aquí */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.alumni > p {
+    font-size: 14px;
+    background-color: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Estilos para la galería */
+.galeria {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.galeria ul li,
+.galeria li img {
+    -webkit-transition: all 1s cubic-bezier(0.42, 0.2, 0.2, 0.64);
+    -moz-transition: all 1s cubic-bezier(0.42, 0.2, 0.2, 0.64);
+    -o-transition: all 1s cubic-bezier(0.42, 0.2, 0.2, 0.64);
+    transition: all 1s cubic-bezier(0.42, 0.2, 0.2, 0.64);
+}
+
+.galeria ul li {
+    position: relative;
+    float: left;
+    width: 140px;
+    height: 140px;
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.galeria ul li:hover {
+    z-index: 99;
+}
+
+.galeria ul li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #e7e6e6;
+    padding: 5px;
+    width: 140px;
+    height: 140px;
+    background: #abc4d6;
+    filter: grayscale(100%);
+    border-radius: 50%; /* Cambiamos el valor a 50% para un círculo */
+}
+
+.galeria ul li img:hover {
+    width: 280px;
+    height: 280px;
+    margin-top: -150px;
+    margin-left: -150px;
+    top: 50%;
+    left: 50%;
+    filter: grayscale(0%);
+    border-radius: 0; /* Quitamos el redondeo en hover */
+}
+
+#copyright {
+    margin-top: 40px;
+    margin-right: 20%;
+    width: 60%;
+    text-align: right;
+    float: right;
+}
+.overflow-visible {
+    height: 2em;
+    width: 12em;
+    border: 3px dotted rgb(31, 31, 31);
+    margin-bottom: 100px;
+    overflow: visible; /* dibuja barras si es necesario */
+    }
+    .video-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .video-container p {
+        margin-bottom: 10px;
+      }
+      .overflow-visible {
+        height: 2em;
+        width: 12em;
+        border: 3px dotted orange;
+        margin-bottom: 100px;
+        overflow: visible; /* dibuja barras si es necesario */
+        }

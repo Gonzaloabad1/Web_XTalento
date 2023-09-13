@@ -1,0 +1,239 @@
+.cursos {
+    padding: 0 8rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    }
+    @media (max-width: 700px) {
+    .cursos {
+    padding: 0 2rem;
+    }
+    }
+    
+    .cursos> a {
+    font-size: 1.5rem;
+    }
+    .cursos > h2 {
+        font-size: 16px;
+        color: red; 
+        color: rgb(60, 220, 20);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    .cursos> h3 {
+        font-size: 16px;
+        color: red; 
+        color: crimson;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    
+    .cursos> p {
+        font-size: 14px;
+        color: black; 
+        background-color: black;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    body {
+        color: #ffffff;
+        font-family: Arial, Helvetica, serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        background: url(http://josetxu.com/img/fondo_blanco.png) repeat 0 0 #e0e0e0;
+    }
+    
+    h1 {
+        background: #ffffff;
+        color: #0b0b0b;
+        text-align: center;
+        margin: 0 0 5% 0;
+        padding: 0.5em;
+        margin: 0 0 5% 0;
+    }
+    
+    body {
+        color: #272626;
+        font-family: Arial, Helvetica, serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        background: url(http://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
+    }
+    
+    h2 {
+        background: #d3d3d3;
+        color: #eb0808;
+        text-align: center;
+        padding: 0.5em;
+       margin-bottom: 10px;
+    }
+    
+    .cardBox {
+        float: left;
+        margin: 1% 0 0 1%;
+        perspective: 800px;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        width: 23.7%;
+        font-size: 1.2em;
+    }
+    
+    .cardBox:hover .card {
+        transform: rotateY( 180deg);
+    }
+    
+    .card {
+        background: #222;
+        cursor: default;
+        transform-style: preserve-3d;
+        -webkit-transition: transform 0.4s ease 0s;
+        transition: transform 0.4s ease 0s;
+        width: 100%;
+        -webkit-animation: mymove 1s 1;
+        animation: mymove 1s 1;
+        height: 21vh;
+     
+    }
+    .card p {
+        margin-bottom: 1.8em;
+    }
+    
+    .card .front,
+    .card .back {
+        backface-visibility: hidden;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        display: block;
+        padding: 0.8em;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        height: 100%;
+    }
+    
+    .card .front strong {
+        background: #fff;
+        border-radius: 100%;
+        color: #222;
+        font-size: 1.5em;
+        line-height: 30px;
+        padding: 0 7px 4px 8px;
+    }
+    
+    .card .back {
+        transform: rotateY( 180deg);
+        height:22vh;
+    }
+    
+    .card .back a {
+        padding: 0.3em 0.5em;
+        background: #333;
+        color: #dbdbdb;
+        text-decoration: none;
+        border-radius: 1px;
+        font-size: 0.9em;
+        -webkit-transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s;
+    }
+    
+    .card .back a:hover {
+        background: #fff;
+        color: #b3b3b3;
+        text-shadow: 0 0 1px #333;
+    }
+    
+    img.bgEqual {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+    
+    .cardBox:nth-child(1) .card .back {
+        background: cornflowerblue;
+    }
+    
+    .cardBox:nth-child(2) .card .back {
+        background: orange;
+    }
+    
+    .cardBox:nth-child(3) .card .back {
+        background: yellowgreen;
+    }
+    
+    .cardBox:nth-child(4) .card .back {
+        background: tomato;
+    }
+    
+    .cardBox:nth-child(2) .card {
+        -webkit-animation: mymove 1.5s 1;
+        animation: mymove 1.5s 1;
+    }
+    
+    .cardBox:nth-child(3) .card {
+        -webkit-animation: mymove 2s 1;
+        animation: mymove 2s 1;
+    }
+    
+    .cardBox:nth-child(4) .card {
+        -webkit-animation: mymove 2.5s 1;
+        animation: mymove 2.5s 1;
+    }
+    
+    @-webkit-keyframes mymove {
+        from {transform: rotateY( 180deg);}
+        to {transform: rotateY( 0deg);}
+    }
+    
+    @keyframes mymove {
+        from {transform: rotateY( 180deg);}
+        to {transform: rotateY( 0deg);}
+    }
+    
+    @media (min-width: 768px) and (max-width: 980px) {
+        .cardBox {
+            font-size: 1em;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .cardBox {
+            margin-left: 2.8%;
+            margin-top: 3%;
+            width: 46%;
+        }
+        .cardBox:last-child {
+            margin-bottom: 3%;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .cardBox {
+            font-size: 1em;
+        }
+    }
+    
+    @media screen and (max-width: 380px) {
+        .cardBox {
+            font-size: 1.2em;
+        }
+        .cardBox {
+            width: 94.5%;
+        }
+    }
+    .cursos> p {
+        font-size: 14px;
+        color: black; 
+        background-color: black;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }

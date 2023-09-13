@@ -1,0 +1,83 @@
+.blog {
+    padding: 0 8rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    }
+    @media (max-width: 700px) {
+    .cursos {
+    padding: 0 2rem;
+    }
+    }
+    
+    .blog> a {
+    font-size: 1.5rem;
+    }
+    .blog > h2 {
+        font-size: 16px;
+        color: red; 
+        color: rgb(60, 220, 20);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    .blog> h3 {
+        font-size: 16px;
+        color: red; 
+        color: crimson;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    
+    .blog> p {
+        font-size: 14px;
+        color: black; 
+        background-color: black;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    body {
+        color: #ffffff;
+        font-family: Arial, Helvetica, serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        background: url(http://josetxu.com/img/fondo_blanco.png) repeat 0 0 #888888;
+    }
+    
+    h1 {
+        background: #dddddd;
+        color: #0b0b0b;
+        text-align: center;
+        margin: 0 0 5% 0;
+        padding: 0.5em;
+        margin: 0 0 5% 0;
+    }
+    
+    body {
+        color: #272626;
+        font-family: Arial, Helvetica, serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        background: url(http://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
+    }
+    
+    h2 {
+        background: #d5d4d4;
+        color: #eb0808;
+        text-align: center;
+        padding: 0.5em;
+       margin-bottom: 10px;
+    }
+    .blog p {
+        font-size: 14px;
+        color: black; 
+        background-color: black;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
